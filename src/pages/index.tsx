@@ -1,10 +1,15 @@
 import React from 'react'
+import styled from 'styled-components'
 
 interface Props {
 }
 
 const Index: React.FC<Props> = () => {
-  return (<h1>Index</h1>)
+  return (<Title>Index</Title>)
 }
+
+const Title = styled.h1`
+  margin: 20px;
+`
 
 export default Index
