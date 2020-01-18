@@ -1,12 +1,15 @@
-import { NextPage } from 'next'
-import { AppProps } from 'next/app'
-import {Reset} from "styled-reset"
+import { NextPage } from "next";
+import { AppProps } from "next/app";
+import React from "react";
+import { Reset } from "styled-reset";
 
-const App: NextPage<AppProps> = ({ Component, pageProps }) => {
-  return <>
-    <Reset />
-    <Component />
-  </>
-}
+const App: NextPage<AppProps> = ({ Component }) => {
+  return (
+    <>
+      <Reset />
+      <Component />
+    </>
+  );
+};
 
-export default App
+export default App;
